@@ -23,6 +23,12 @@ namespace TimeChecker
     public MainWindow()
     {
       InitializeComponent();
+      buttonMessage.Click += ShowMessage;
+    }
+
+    public void ShowMessage(object sender, RoutedEventArgs e)
+    {
+      MessageBox.Show("Test");
     }
   }
 }
